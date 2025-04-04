@@ -1,0 +1,329 @@
+/* Regular weight */
+@font-face {
+    font-family: 'nimbus-sans-l'; /* Font family name */
+    src: url('fonts/nimbus-sans-l/NimbusSanL-Reg.ttf');
+    font-weight: normal; /* Regular weight */
+    font-style: normal;  /* Normal style (non-italic) */
+}
+
+/* Bold weight */
+@font-face {
+    font-family: 'nimbus-sans-l';
+    src: url('fonts/nimbus-sans-l/NimbusSanL-Bold.ttf');
+    font-weight: bold; /* Bold weight */
+    font-style: normal; /* Normal style (non-italic) */
+}
+
+/* Italic style */
+@font-face {
+    font-family: 'nimbus-sans-l';
+    src: url('fonts/nimbus-sans-l/NimbusSanL-RegIta');
+    font-weight: normal; /* Regular weight */
+    font-style: italic;  /* Italic style */
+}
+
+/* Bold Italic style */
+@font-face {
+    font-family: 'MyFont';
+    src: url('fonts/nimbus-sans-l/NimbusSanL-BolIta');
+    font-weight: bold; /* Bold weight */
+    font-style: italic; /* Italic style */
+}
+
+html {
+    margin: 0;
+}
+
+
+body {
+    font-family: nimbus-sans-l, sans-serif;
+    background-color: lemonchiffon;
+    color: #005E74; /* Text color */
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0; 
+}
+
+.heromain {
+    margin: 0;
+}
+
+.hero {
+    background: url(images/self/randallwithpaintings3.JPG) center;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.hero-content {
+    position: absolute;
+    color: white;
+    size: absolute;
+    display: inline;
+    margin-left: 1.5vw;
+    margin-top: 30vh;
+}
+
+p5 {
+    font-weight: bold;
+    font-size: 12vw;
+    line-height: 12vw;
+}
+
+p1 {
+    font-size: 5vw;
+    margin-left: 80vw;
+}
+
+@media (max-width: 1000px) {
+    .hero-content {
+        margin-top: 50vh;
+    }
+    
+    p1 {
+        margin-left: 70vw;
+        font-size: 7vw;
+    }
+}
+
+nav {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0px;
+    padding: 0;
+    border: 0;
+    text-align: left;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+nav a {
+    color: #007C92; /* Link color */
+    padding: 1vw 1vw;
+    margin: 0;
+    border: 0;
+    font-size: 1em;
+    line-height: 2em;
+    text-decoration: none;
+    position: sticky;
+    text-wrap: nowrap;
+}
+
+#onthispage {
+    color: black;
+}
+
+nav a:hover {
+    background-color: mediumaquamarine;
+    color: black;
+}
+
+nav a:active {
+    background-color: indianred;
+    color: white;
+}
+
+@media (min-width: 1000px) {
+    nav a {
+        font-size: 1.4em;
+    }
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid layout */
+    gap: 15px;
+}
+
+.artwork {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
+}
+
+.artwork img {
+    width: 100%;              /* Full width */
+    height: 100%;             /* Maintain aspect ratio */
+    max-height: 400px;        /* Max height for images */
+    object-fit: cover;       /* Crop image to fit */
+    border-radius: 0px;
+}
+
+.artwork h3 {
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.artwork p {
+    margin: 5px 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+.artwork:hover {
+    transform: scale(1.03); /* Slight zoom on hover */
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Items side by side */
+    gap: 25px;
+    z-index: 1002; /* Ensure lightbox is above all content */
+}
+
+@media (max-width: 600px) {
+    .lightbox {
+        flex-direction: column;
+    }
+    .lightbox img {
+        max-width: 80%;
+        max-height: 70%;
+    }
+    .text-box {
+        text-align: center;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 900px) {
+    .lightbox img {
+        max-height: 40%;
+        max-width: 50%;
+    }
+}
+
+.lightbox img {
+    max-width: 60%; /* Adjust to allow space for the text */
+    max-height: 70%;
+    border-radius: 8px;
+}
+
+.text-box {
+    margin-left: 0px;
+    max-width: 300px;
+    color: white;
+}
+
+.text-box h3 {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.text-box p {
+    margin: 5px 0;
+    font-size: 1.25em;
+}
+
+main {
+   margin: 10px; 
+}
+
+footer {
+    margin: 10px;
+    color: black;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.aboutcontainer {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.aboutphotocontainer {
+    justify-content: center;
+}
+
+.aboutphoto {
+    width: 100%;
+}
+
+.abouttext {
+    margin-top: 20px;
+}
+
+@media (min-width: 700px) {
+    .aboutcontainer {
+        flex-direction: row-reverse;
+    }
+    .abouttext {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+    .aboutphoto {
+        width: 40vw;;
+    }
+}
+
+.contact-container {
+    width: 100%;
+}
+
+.contact-inputs {
+    height: 50px;
+    width: 95%;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: indianred;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contact textarea {
+    height: 140px;
+    padding-top: 20px;
+    border-radius: 10px;
+    font-family: nimbus-sans-l, sans-serif;
+}
+
+
+.contact-inputs:focus {
+    border: 2px solid indianred;
+}
+
+.contact-inputs::placeholder {
+    color: indianred;
+    font-size: 1em;
+}
+
+.contact-button {
+    display: flex;
+    align-items: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: indianred;
+    cursor: pointer;
+}
