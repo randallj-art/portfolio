@@ -153,9 +153,15 @@ nav a:active {
 .artwork img {
     width: 100%;              /* Full width */
     height: 100%;             /* Maintain aspect ratio */
-    max-width: 10vw;        /* Max height for images */
+    max-height: 400px;        /* Max height for images */
     object-fit: contain;       /* Crop image to fit */
     border-radius: 0px;
+}
+
+@media (max-width: 600px) {
+    .artwork img {
+        max-height: 1000px;
+    }
 }
 
 .artwork h3 {
