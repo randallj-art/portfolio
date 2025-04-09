@@ -160,7 +160,7 @@ nav a:active {
 
 @media (max-width: 600px) {
     .artwork img {
-        max-height: 1000px;
+        max-height: 10000px;
     }
 }
 
