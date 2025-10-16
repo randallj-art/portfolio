@@ -137,6 +137,7 @@ nav a:active {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid layout */
     gap: 50px;
+    padding: 10px;
 }
 
 .artwork {
