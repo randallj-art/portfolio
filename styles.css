@@ -155,7 +155,7 @@ nav a:active {
     width: 100%;              /* Full width */
     height: 100%;             /* Maintain aspect ratio */
     max-height: 500px;   /* Max height for images */
-    max-width: 300px;
+    max-width: 400px;
     object-fit: cover;       /* Crop image to fit */
     border-radius: 0px;
 }
