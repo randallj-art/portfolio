@@ -217,7 +217,7 @@ nav a:active {
 }
 
 .lightbox img {
-    max-width: 60%; /* Adjust to allow space for the text */
+    max-width: 75%; /* Adjust to allow space for the text */
     max-height: 70%;
     border-radius: 8px;
 }
